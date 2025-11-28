@@ -1,0 +1,105 @@
+﻿Fetching data for AAPL...
+Testing quoteSummary with instance...
+node : [yahooFinance.
+quoteSummary] 
+Invalid options ("#/d
+efinitions/QuoteSumma
+ryOptions")
+At line:1 char:1
++ node 
+test-stock-data.mjs 
+2>&1 | Out-File 
+-Encoding utf8 
+output_instan ...
++ ~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~
+    + CategoryInfo   
+           : NotSpe  
+  cified: ([yahooF   
+ inance.q...ummar    
+yOptions"):Strin    
+g) [], RemoteExc    
+eption
+    + FullyQualified 
+   ErrorId : Native  
+  CommandError
+ 
+{
+  "errors": [
+    {
+      "schemaPath": "#/definitions/QuoteSummaryOptions/additionalProperties",
+      "instancePath": "",
+      "message": "should NOT have additional properties",
+      "params": {
+        "additionalProperties": {
+          "validateResult": false
+        }
+      }
+    }
+  ],
+  "input": {
+    "modules": [
+      "price",
+      "summaryDetail",
+      "defaultKeyStatistics",
+      "financialData",
+      "assetProfile"
+    ],
+    "validateResult": false
+  }
+}
+Error fetching stock 
+data: 
+InvalidOptionsError: 
+yahooFinance.quoteSum
+mary called with 
+invalid options.
+    at validate (file
+:///C:/Users/large/On
+eDrive/Desktop/Stock%
+20Track/stock-track/n
+ode_modules/yahoo-fin
+ance2/esm/src/lib/val
+idateAndCoerceTypes.j
+s:224:15)
+    at YahooFinance.m
+oduleExec [as 
+_moduleExec] (file://
+/C:/Users/large/OneDr
+ive/Desktop/Stock%20T
+rack/stock-track/node
+_modules/yahoo-financ
+e2/esm/src/lib/module
+Exec.js:53:9)
+    at YahooFinance.q
+uoteSummary (file:///
+C:/Users/large/OneDri
+ve/Desktop/Stock%20Tr
+ack/stock-track/node_
+modules/yahoo-finance
+2/esm/src/modules/quo
+teSummary.js:149:17)
+    at testStockData 
+(file:///C:/Users/lar
+ge/OneDrive/Desktop/S
+tock%20Track/stock-tr
+ack/test-stock-data.m
+js:12:39)
+    at file:///C:/Use
+rs/large/OneDrive/Des
+ktop/Stock%20Track/st
+ock-track/test-stock-
+data.mjs:34:1
+    at ModuleJob.run 
+(node:internal/module
+s/esm/module_job:345:
+25)
+    at async onImport
+.tracePromise.__proto
+__ (node:internal/mod
+ules/esm/loader:665:2
+6)
+    at async asyncRun
+EntryPointWithESMLoad
+er (node:internal/mod
+ules/run_main:117:5)

@@ -1,0 +1,81 @@
+﻿Type of yahooFinance: function
+yahooFinance keys: [
+  'autoc',
+  'chart',
+  'dailyGainers',
+  'dailyLosers',
+  'fundamentalsTimeSeries',
+  'historical',
+  'insights',
+  'options',
+  'quote',
+  'quoteSummary',
+  'recommendationsBySymbol',
+  'screener',
+  'search',
+  'trendingSymbols',
+  'quoteCombine'
+]
+Fetching data for AAPL...
+Testing quoteSummary...
+node : Error 
+fetching stock data: 
+Error: Call `const 
+yahooFinance = new 
+YahooFinance()` 
+first.  Upgrading 
+from v2?  See https:/
+/github.com/gadicc/ya
+hoo-finance2/blob/dev
+/docs/UPGRADING.md.
+At line:1 char:1
++ node 
+test-stock-data.mjs 
+2>&1 | Out-File 
+-Encoding utf8 
+output_debug. ...
++ ~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~
+    + CategoryInfo   
+           : NotSpe  
+  cified: (Error f   
+ etching ...s/UPG    
+RADING.md.:Strin    
+g) [], RemoteExc    
+eption
+    + FullyQualified 
+   ErrorId : Native  
+  CommandError
+ 
+    at YahooFinance.q
+uoteSummary (file:///
+C:/Users/large/OneDri
+ve/Desktop/Stock%20Tr
+ack/stock-track/node_
+modules/yahoo-finance
+2/esm/src/createYahoo
+Finance.js:158:19)
+    at testStockData 
+(file:///C:/Users/lar
+ge/OneDrive/Desktop/S
+tock%20Track/stock-tr
+ack/test-stock-data.m
+js:13:49)
+    at file:///C:/Use
+rs/large/OneDrive/Des
+ktop/Stock%20Track/st
+ock-track/test-stock-
+data.mjs:35:1
+    at ModuleJob.run 
+(node:internal/module
+s/esm/module_job:345:
+25)
+    at async onImport
+.tracePromise.__proto
+__ (node:internal/mod
+ules/esm/loader:665:2
+6)
+    at async asyncRun
+EntryPointWithESMLoad
+er (node:internal/mod
+ules/run_main:117:5)

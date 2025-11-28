@@ -1,0 +1,92 @@
+﻿Fetching data for AAPL...
+Testing quoteSummary with instance...
+Please consider completing the survey at https://bit.ly/yahoo-finance-api-feedback if you haven't already; for more info see https://github.com/gadicc/yahoo-finance2/issues/764#issuecomment-2056623851.  This will only be shown once, but you can suppress this message in future with `new YahooFinance({ suppressNotices: ['yahooSurvey'] })`.
+quoteSummary success. Price: 270.44
+Testing chart with instance...
+node : 
+[yahooFinance.chart] 
+Invalid options ("#/d
+efinitions/ChartOptio
+ns")
+At line:1 char:1
++ node 
+test-stock-data.mjs 
+2>&1 | Out-File 
+-Encoding utf8 
+output_test_2 ...
++ ~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~
+    + CategoryInfo   
+           : 
+NotSpecified: ([    y
+ahooFinance.c.../Cha 
+   
+rtOptions"):String) 
+[    ], 
+RemoteException
+    + 
+FullyQualifiedError  
+  Id : 
+NativeCommandErr    
+or
+ 
+{
+  "errors": [
+    {
+      "schemaPath": "#/definitions/ChartOptions/additionalProperties",
+      "instancePath": "",
+      "message": "should NOT have additional properties",
+      "params": {
+        "additionalProperties": {
+          "validateResult": false
+        }
+      }
+    }
+  ],
+  "input": {
+    "period1": "1mo",
+    "interval": "1d",
+    "validateResult": false
+  }
+}
+Error fetching stock 
+data: 
+InvalidOptionsError: 
+yahooFinance.chart 
+called with invalid 
+options.
+    at validate (file
+:///C:/Users/large/On
+eDrive/Desktop/Stock%
+20Track/stock-track/n
+ode_modules/yahoo-fin
+ance2/esm/src/lib/val
+idateAndCoerceTypes.j
+s:224:15)
+    at YahooFinance.m
+oduleExec [as 
+_moduleExec] (file://
+/C:/Users/large/OneDr
+ive/Desktop/Stock%20T
+rack/stock-track/node
+_modules/yahoo-financ
+e2/esm/src/lib/module
+Exec.js:53:9)
+    at 
+YahooFinance.chart (f
+ile:///C:/Users/large
+/OneDrive/Desktop/Sto
+ck%20Track/stock-trac
+k/node_modules/yahoo-
+finance2/esm/src/modu
+les/chart.js:162:32)
+    at testStockData 
+(file:///C:/Users/lar
+ge/OneDrive/Desktop/S
+tock%20Track/stock-tr
+ack/test-stock-data.m
+js:18:38)
+    at process.proces
+sTicksAndRejections (
+node:internal/process
+/task_queues:105:5)
